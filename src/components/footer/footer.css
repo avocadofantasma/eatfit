@@ -1,0 +1,8 @@
+
+.follow-us-icons {
+  display: -webkit-inline-box;
+}
+
+.follow-us-icons>li>img {
+  padding: 10px;
+}
