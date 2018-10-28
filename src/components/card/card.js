@@ -1,7 +1,8 @@
 import React from 'react'
 import './card.css'
+import { NavLink } from 'react-router-dom'
 
-const Card = ({ title = 'default title', description = 'default desc', color = 'green' }) => {
+const Card = ({ title = 'default title', description = 'default desc', color = 'green', url="" }) => {
     return (
         <div>
             <div class={`strip card-panel ${color} lighten-1`}>
@@ -10,7 +11,9 @@ const Card = ({ title = 'default title', description = 'default desc', color = '
                     <p>{description}</p>
                 </div>
                 <div class="card-action">
+                <NavLink to={url}>
                     <a class="waves-effect waves-light btn"><i class="material-icons right">arrow_forward</i>Ir a {title}</a>
+                </NavLink>
                 </div>
             </div>
         </div>

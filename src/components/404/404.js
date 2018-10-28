@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 const NotFound = () => {
     return (
         <div>
-
             <svg width="380px" height="500px" viewBox="0 0 837 1045" version="1.1">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" type="MSPage">
                     <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#007FB2" stroke-width="6" type="MSShapeGroup"></path>

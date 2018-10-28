@@ -9,8 +9,11 @@ import 'materialize-css/js/sideNav.js';
 import './palette.css'
 import './App.css';
 //views
-// import Layout from './views/layout.js'
 import AboutUs from './views/about-us.js'
+import Training from './views/training.js'
+import Diet from './views/diet.js'
+import Nutrition from './views/nutrition'
+import Tips from './views/tips.js'
 import Carriers from './views/carriers.js'
 import ContactUs from './views/contact-us.js'
 import Enterprises from './views/enterprises.js'
@@ -35,6 +38,10 @@ class App extends Component {
             <div className="main">
               <Switch>
                 <Route exact path="/" component={Home} />
+                <Route path="/training" component={Training} />
+                <Route path="/tips" component={Tips} />
+                <Route path="/nutrition" component={Nutrition} />
+                <Route path="/diet" component={Diet} />
                 <Route path="/about-us" component={AboutUs} />
                 <Route path="/carriers" component={Carriers} />
                 <Route path="/contact-us" component={ContactUs} />
