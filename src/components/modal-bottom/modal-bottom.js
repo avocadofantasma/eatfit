@@ -22,36 +22,32 @@ class ModalBottom extends Component {
                         <h3 className="header">Modal Header</h3>
                         <ul className="collection">
                             <li className="collection-item avatar">
-                            <img src="images/yuna.jpg" alt="" className="circle" />
-                            <span className="title">Title</span>
-                            <p>First Line <br/>
-                                Second Line
-                            </p>
-                            <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+                                <a href="https://www.youtube.com/watch?v=Lccxvj8RmAc"  target="_blank">
+                                    <i className="material-icons circle red">play_arrow</i>
+                                    <h1 className="title">Gluteos</h1>
+                                    <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+                                </a>
                             </li>
                             <li className="collection-item avatar">
-                            <i className="material-icons circle">folder</i>
-                            <span className="title">Title</span>
-                            <p>First Line <br/>
-                                Second Line
-                            </p>
-                            <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+                                <a href="https://www.youtube.com/watch?v=H2JCjhVMkJg"  target="_blank">
+                                    <i className="material-icons circle red">play_arrow</i>
+                                    <h1 className="title">Pectorales</h1>
+                                    <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+                                </a>
                             </li>
                             <li className="collection-item avatar">
-                            <i className="material-icons circle green">insert_chart</i>
-                            <span className="title">Title</span>
-                            <p>First Line <br/>
-                                Second Line
-                            </p>
-                            <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+                                <a href="https://www.youtube.com/watch?v=6mWIZf-dZCQ"  target="_blank">
+                                    <i className="material-icons circle red">play_arrow</i>
+                                    <h1 className="title">Brazos</h1>
+                                    <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+                                </a>
                             </li>
                             <li className="collection-item avatar">
-                            <i className="material-icons circle red">play_arrow</i>
-                            <span className="title">Title</span>
-                            <p>First Line <br/>
-                                Second Line
-                            </p>
-                            <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+                                <a href="https://www.youtube.com/watch?v=EEQQOBLi9bU"  target="_blank">
+                                    <i className="material-icons circle red">play_arrow</i>
+                                    <h1 className="title">Hombros</h1>
+                                    <a href="#!" className="secondary-content"><i className="material-icons">grade</i></a>
+                                </a>
                             </li>
                         </ul>
                     </div>
