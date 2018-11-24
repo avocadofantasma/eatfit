@@ -1,7 +1,7 @@
 import React from 'react'
 import MyDiet from "../components/my-diet/my-diet.js";
 
-const Diet = () => {
+const MyDietCollection = () => {
     return (
         <div>
             <div className="container">
@@ -11,4 +11,4 @@ const Diet = () => {
     );
 }
 
-export default Diet;
+export default Training;
