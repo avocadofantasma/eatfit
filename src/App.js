@@ -3,9 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import 'materialize-css/dist/css/materialize.css';
 import 'materialize-css/dist/js/materialize.js';
 import 'materialize-css/js/cards.js';
-import 'materialize-css/js/animation.js';
-import 'materialize-css/js/dropdown.js';
-import 'materialize-css/js/sideNav.js';
 import './palette.css'
 import './App.css';
 //views
@@ -24,6 +21,7 @@ import NotFound from './components/404/404.js'
 
 import FixedButton from './components/fixed-button/fixed-button.js'
 import Navbar from './components/navbar/navbar.js'
+import Sidenav from './components/sidenav/sidenav'
 import Footer from './components/footer/footer.js'
 import $ from 'jquery'
 
@@ -34,7 +32,7 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <Navbar $={$} />
+            <Sidenav $={$} />
             <div className="main">
               <Switch>
                 <Route exact path="/" component={Home} />

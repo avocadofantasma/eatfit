@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Navbar from '../components/navbar/navbar.js'
+import Sidenav from '../components/Sidenav/sidenav'
 import Footer from '../components/footer/footer.js'
 import $ from 'jquery'
 
@@ -10,7 +10,7 @@ class Layout extends Component {
     render() {
         return (
             <div>
-                <Navbar $={$} />
+                <Sidenav $={$} />
                 <div className="main">
                 Layout
                 </div>
