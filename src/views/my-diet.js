@@ -11,4 +11,4 @@ const MyDietCollection = () => {
     );
 }
 
-export default Training;
+export default MyDietCollection;
