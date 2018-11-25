@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import './navbar.css'
-import 'materialize-css/js/tabs.js';
 
 class Navbar extends Component {
     state = {
@@ -9,7 +8,7 @@ class Navbar extends Component {
             url: ""
         }
     }
-    componentDidMount = () => { this.props.$(".button-collapse").sideNav() }
+    componentDidMount = () => {window.$(".button-collapse").sideNav() }
     render() {
         return (
             <div className="">
