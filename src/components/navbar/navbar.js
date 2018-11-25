@@ -8,26 +8,35 @@ class Navbar extends Component {
             url: ""
         }
     }
-    componentDidMount = () => { this.props.$(".button-collapse").sideNav() }
+    componentDidMount = () => {window.$(".button-collapse").sideNav() }
     render() {
         return (
             <div className="">
                 <nav>
-                    <div className="nav-wrapper default-primary-color">
+                    <div className="nav-wrapper white">
                         <div className="container navbar">
-                            <img src="http://via.placeholder.com/150x64" alt="logo" className="left responsive-img hide-on-med-and-down" />
                             <a href="#!" data-activates="mobile-demo" className="button-collapse"><i className="material-icons black-text">menu</i></a>
-                            <ul className="right hide-on-med-and-down">
-                                <li><NavLink to={`${this.state.match.url}/`} ><i className="material-icons">home</i></NavLink></li>
-                                <li><NavLink to={`${this.state.match.url}/about-us`} activeClassName='link-active'>About us</NavLink></li>
-                                <li><NavLink to={`${this.state.match.url}/enterprises`} activeClassName='link-active'>Empresas<i className="material-icons right">business</i></NavLink></li>
-                                <li><NavLink to={`${this.state.match.url}/contact-us`} activeClassName='link-active'>Contact us <i className="material-icons right">email</i></NavLink></li>
-                            </ul>
+                            <NavLink to={`${this.state.match.url}/`}>
+                                <img src="/logo.jpg" alt="logo" className="responsive-img logo" />
+                            </NavLink>
                             <ul className="side-nav black-text" id="mobile-demo">
-                                <li><NavLink to={`${this.state.match.url}/`}><i className="material-icons">home</i></NavLink></li>
-                                <li><NavLink to={`${this.state.match.url}/about-us`}>About us</NavLink></li>
-                                <li><NavLink to={`${this.state.match.url}/enterprises`} activeClassName='link-active'>Empresas<i className="material-icons right">business</i></NavLink></li>
-                                <li><NavLink to={`${this.state.match.url}/contact-us`} activeClassName='link-active'>Contact us <i className="material-icons right">email</i></NavLink></li>
+                                <li>
+                                    <div className="user-view no-margin">
+                                        <div className="background black">
+                                            <img src="/wback.png" className="responsive-img"/>
+                                        </div>
+                                        <a href="#user"><img className="circle" src="images/yuna.jpg" /></a>
+                                        <a href="#name"><span className="white-text name">John Doe</span></a>
+                                        <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
+                                    </div>
+                                </li>
+                                <li><NavLink to={`${this.state.match.url}/training`}>Entrenamiento</NavLink></li>
+                                <li><NavLink to={`${this.state.match.url}/diet`} activeClassName='link-active'>Mi dieta</NavLink></li>
+                                <li><div className="divider"></div></li>
+                                <li><a className="subheader">Nutrición</a></li>
+                                <li><NavLink to={`${this.state.match.url}/tips`} activeClassName='link-active'>Tips</NavLink></li>
+                                <li><NavLink to={`${this.state.match.url}/nutrition`} activeClassName='link-active'>Nutrición</NavLink></li>
+                                <li className="center"><NavLink to={`${this.state.match.url}/`}><i className="material-icons">home</i></NavLink></li>
                             </ul>
                         </div>
                     </div>

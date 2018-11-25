@@ -1,15 +1,36 @@
-.navbar ul a :not(.side-nav){
-    color: #fff ;
+.navbar ul a :not(.side-nav) {
+    color: #fff;
     background: transparent;
 
 }
-.sidenav{
-    color:black;
+
+.sidenav {
+    color: black;
 }
+
 /* .navbar> ul> li :hover{
     border-bottom: 4px solid #FFC107;;
 /* } */
 /* .link-active{
     color: #fff !important;
     background: #00BCD4 !important;
-} */ 
+} */
+nav {
+    position: fixed;
+    z-index: 1000;
+}
+
+nav a,
+nav .brand-logo {
+    color: black;
+}
+
+nav .sidenav-trigger {
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.logo {
+    width: 101px;
+    margin-right: 50.5px;
+}
