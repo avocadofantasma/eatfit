@@ -1,12 +1,12 @@
 import React from 'react';
 import Meal from './meal.js';
 
-const HalfMeal = ({items}) => {
+const HalfMeal = ({ items }) => {
     return (
         <div className="collection card">
             <ul>
                 {
-                    items.map( e => {debugger; return <Meal name={e.name} portion={e.portion}/>})
+                    items.map((e, i) => <Meal name={e.name} portion={e.portion} />)
                 }
             </ul>
         </div>
