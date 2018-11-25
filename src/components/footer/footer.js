@@ -11,13 +11,11 @@ class Footer extends Component {
                         <div className="row">
                             <Links />
                             <Links />
-                            <Links />
-                            <Links />
                         </div>
                     </div>
                     <div className="footer-copyright">
                         <div className="container">
-                            © 2018 Telecom
+                            © 2018 Fit Eat
                         </div>
                     </div>
                 </footer>

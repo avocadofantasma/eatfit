@@ -5,11 +5,9 @@ class Meals extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            meals: [
-                { name: 'Comida', portion: '2' }
-            ]
+            meals: this.props.items || []
         }
-        this.state.meals = [...Array(4)].map(() => this.state.meals[0]);
+        // this.state.meals = [...Array(4)].map(() => this.state.meals[0]);
     }
 
     ComponentDidMount() {
@@ -21,7 +19,7 @@ class Meals extends Component {
 
     render() {
         return (
-            <div className="meals">
+            <div className="meals card">
                 <ul className="collection with-header">
                     <li className="collection-header"><h4>{this.props.title}</h4></li>
                     {
