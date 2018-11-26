@@ -10,7 +10,7 @@ class ModalBottom extends Component {
 
     componentDidMount = () => {
         console.log('mounted', document.querySelectorAll('.modal'), $)
-        $('.modal').modal();
+        $(`.modal-${this.props.title}`).modal();
     };
 
     render() {
