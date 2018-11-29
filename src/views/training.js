@@ -1,14 +1,18 @@
 import React from 'react'
-import Card from "../components/card/card";
 import TrainingCard from '../components/training-card/training-card';
 
 const Training = () => {
+    const trainCards = [
+        { title: "Principiante", color: "blue", description: "" },
+        { title: "Intermedio", color: "purple", description: "" },
+        { title: "Avanzado", color: "red", description: "" }
+    ]
     return (
         <div>
             <div className="container margin-top">
-                <TrainingCard title="Principiante" color="blue"/>
-                <TrainingCard title="Intermedio" color="purple"/>
-                <TrainingCard title="Avanzado" color="red"/>
+                {
+                    trainCards.map((e, i) => <TrainingCard title={e.title} color={e.color} description={e.description} key={i} />)
+                }
             </div>
         </div>
     );

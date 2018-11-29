@@ -34,3 +34,11 @@ nav .sidenav-trigger {
     width: 101px;
     margin-right: 50.5px;
 }
+
+.home-sidenav {
+    display: flex !important;
+}
+
+.home-sidenav i {
+    margin: auto !important;
+}

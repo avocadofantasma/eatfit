@@ -1,9 +1,10 @@
 import React from 'react'
+import Appointments from '../components/appointment/appointment.js'
 
 const Nutrition = () => {
     return (
         <div>
-            nutrition
+            <Appointments/>
         </div>
     );
 }
