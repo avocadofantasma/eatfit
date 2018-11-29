@@ -23,9 +23,9 @@ class Navbar extends Component {
                                 <li>
                                     <div className="user-view no-margin">
                                         <div className="background black">
-                                            <img src="/wback.png" className="responsive-img"/>
+                                            <img src="/wback.png" className="responsive-img" alt="bg-img"/>
                                         </div>
-                                        <a href="#user"><img className="circle" src="/profile2.jpg" /></a>
+                                        <a href="#user"><img className="circle" src="/profile2.jpg" alt="profile-img"/></a>
                                         <a href="#name"><span className="white-text name">John Doe</span></a>
                                         <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
                                     </div>
@@ -33,7 +33,7 @@ class Navbar extends Component {
                                 <li><NavLink to={`${this.state.match.url}/training`}>Entrenamiento</NavLink></li>
                                 <li><NavLink to={`${this.state.match.url}/diet`} activeClassName='link-active'>Mi dieta</NavLink></li>
                                 <li><div className="divider"></div></li>
-                                <li><a className="subheader">Nutrición</a></li>
+                                <li><a href="#!" className="subheader">Nutrición</a></li>
                                 <li><NavLink to={`${this.state.match.url}/tips`} activeClassName='link-active'>Tips</NavLink></li>
                                 <li><NavLink to={`${this.state.match.url}/nutrition`} activeClassName='link-active'>Nutrición</NavLink></li>
                                 <li><div className="divider"></div></li>
