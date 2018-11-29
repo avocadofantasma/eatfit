@@ -4,6 +4,7 @@ import Card from '../card/card.js'
 
 const Cards = () => {
     const cards = [
+        { title: "Realiza tu pedido", description: "Aquí puedes realizar tu pedido de comida", url: "#!", bg: "tuppers-bg"},
         { title: "Entrenamiento", description: "Rutinas / Planes de entrenamiento", url: "training", bg: "bg-workout"},
         { title: "Alimentación", description: "Mis planes de alimentación", url: "diet", bg: "diet-bg" },
         { title: "Nutrición", description: "Consultas nutricionales", url: "nutrition", bg: "nutrition-bg" },

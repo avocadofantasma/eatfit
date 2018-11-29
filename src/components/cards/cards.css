@@ -20,6 +20,10 @@
     background-image: url(/tips-bg.jpg);
 }
 
+.tuppers-bg {
+    background-image: url(/tuppers-bg.jpg);
+}
+
 .black-trans {
     background-color: #00000096 !important;
 }
