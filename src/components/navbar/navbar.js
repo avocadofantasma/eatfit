@@ -8,7 +8,7 @@ class Navbar extends Component {
             url: ""
         }
     }
-    componentDidMount = () => {window.$(".button-collapse").sideNav() }
+    componentDidMount = () => { window.$(".button-collapse").sideNav() }
     render() {
         return (
             <div className="">
@@ -23,9 +23,9 @@ class Navbar extends Component {
                                 <li>
                                     <div className="user-view no-margin">
                                         <div className="background black">
-                                            <img src="/wback.png" className="responsive-img" alt="bg-img"/>
+                                            <img src="/wback.png" className="responsive-img" alt="bg-img" />
                                         </div>
-                                        <a href="#user"><img className="circle" src="/profile2.jpg" alt="profile-img"/></a>
+                                        <a href="#user"><img className="circle" src="/profile2.jpg" alt="profile-img" /></a>
                                         <a href="#name"><span className="white-text name">John Doe</span></a>
                                         <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
                                     </div>
@@ -38,6 +38,7 @@ class Navbar extends Component {
                                 <li><NavLink to={`${this.state.match.url}/nutrition`} activeClassName='link-active'>Nutrición</NavLink></li>
                                 <li><div className="divider"></div></li>
                                 <li className=""><NavLink to={`${this.state.match.url}/`} className="home-sidenav"><i className="material-icons">home</i></NavLink></li>
+                                <li className=""><a href="https://www.facebook.com/FITEATNUTRITION/" target="_blank" rel="noopener noreferrer"><img src="/find-us.svg" alt="fb" /></a></li>
                             </ul>
                         </div>
                     </div>
