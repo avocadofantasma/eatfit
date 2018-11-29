@@ -3,12 +3,18 @@ import './cards.css'
 import Card from '../card/card.js'
 
 const Cards = () => {
+    const cards = [
+        { title: "Entrenamiento", description: "Rutinas / Planes de entrenamiento", url: "training", bg: "bg-workout"},
+        { title: "Alimentación", description: "Mis planes de alimentación", url: "diet", bg: "diet-bg" },
+        { title: "Nutrición", description: "Consultas nutricionales", url: "nutrition", bg: "nutrition-bg" },
+        { title: "Tips", description: "Tips & tricks mejor alimentación", url: "tips", bg: "tips-bg" },
+    ];
+
     return (
         <div className="container offset-top">
-            <Card title="Entrenamiento" description="Rutinas / Planes de entrenamiento" color="red" url="training"/>
-            <Card title="Alimentación" description="Mis planes de alimentación" color="pink" url="diet"/>
-            <Card title="Nutrición" description="Consultas nutricionales" color="green" url="nutrition"/>
-            <Card title="Tips" description="Tips & tricks mejor alimentación" color="blue" url="tips"/>
+            {
+                cards.map((e, i) => <Card title={e.title} description={e.description} key={i} url={e.url} bg={`${e.bg} card-menu`}/>)
+            }
         </div>
     )
 }

@@ -1,0 +1,25 @@
+.card-menu {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+}
+
+.bg-workout {
+    background-image: url(/workout-bg.jpg);
+}
+
+.diet-bg {
+    background-image: url(/diet-bg.jpg);
+}
+
+.nutrition-bg {
+    background-image: url(/nutrition-bg.jpg);
+}
+
+.tips-bg {
+    background-image: url(/tips-bg.jpg);
+}
+
+.black-trans {
+    background-color: #00000096 !important;
+}
