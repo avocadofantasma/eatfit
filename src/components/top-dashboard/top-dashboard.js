@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './top-dashboard.css';
 
 const TopDashboard = ({ name }) => {
     return (
-        <div class="top-dashboard purple darken-1">
-            <div class="container white-text">
+        <div className="top-dashboard purple darken-1">
+            <div className="container white-text">
                 <p>{name}</p>
                 <p>Mi Progreso</p>
             </div>
